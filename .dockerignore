@@ -1,0 +1,8 @@
+.gitginore
+default.conf.template
+docs/
+.github/
+.gitignore
+node_modules/
+
+README.MD
