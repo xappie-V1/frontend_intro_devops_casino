@@ -1,4 +1,4 @@
-name: CI/CD Pipeline para el frontend de casino
+name: CI/CD Pipeline para el frontend de casino :c
 
 on:
   push:
