@@ -38,7 +38,8 @@ jobs:
           
       - run: npm ci
 
-      - run: npm test
+      - name: Run tests
+        run: npm test -- --watch=false --browsers=ChromeHeadless
 
 
       - name: Build Docker image
