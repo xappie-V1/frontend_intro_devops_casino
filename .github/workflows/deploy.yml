@@ -112,6 +112,13 @@ jobs:
             --name $EKS_CLUSTER \
             --region $AWS_REGION
 
+      - name: Apply Kubernetes manifests
+        run: |
+          kubectl apply -f k8s/deployment.yaml
+          kubectl apply -f k8s/service.yaml
+          kubectl apply -f k8s/hpa.yaml
+      
+
       - name: Verify EKS Cluster
         run: |
           aws eks describe-cluster \
